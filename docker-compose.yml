@@ -1,0 +1,9 @@
+services:
+  comp-app:
+    container_name: comp-app
+    image: mysql:8.0
+    restart: always
+    env_file:
+      - ./dev.env
+    ports:
+      - "3300:3301"
